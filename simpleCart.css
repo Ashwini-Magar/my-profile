@@ -1,0 +1,46 @@
+
+/* container section */
+#container{
+    width: 900px;
+    height: 300px;
+    /* to center */
+     margin: 10px auto; 
+     margin-bottom: 100px;
+  display: block;
+  font-weight: 100px;
+  background-color: aliceblue;
+} 
+
+.list{
+    margin-left: 400px;
+    list-style-type: square;
+    color: blueviolet;
+     font-weight: bold;
+     font-size: 20px;
+font-style: italic;
+}
+.img1{
+    
+    height:300px;
+    width:400px;
+    float: left;
+}
+#container2{
+    width:500px;
+    height: 200px;
+    /* to center */
+    margin: 10px auto; 
+background-color:darkcyan;
+  display: block;
+}
+.img2{
+    
+    height:50px;
+    width:70px;
+    float:right;    
+
+}
+.para h2{
+    color: brown;
+    margin-left: 20px;
+}
