@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Profile</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- style.css is linked -->
+    <link rel="stylesheet" href="style.css"></link> 
+    <!-- <style>
+      header{
+        background-color: black;
+        color: white;
+    
+      }
+      /* Navigation Section */
+
+#navSection{
+
+padding: 10px;
+
+text-align: right;
+text-decoration: none;
+letter-spacing: 2px;
+font-weight: bold;
+
+}
+
+#navSection li{
+
+display: inline;
+
+margin-right: 40px;
+
+}
+
+/* Universal Selector */
+
+*{
+
+margin: 0;
+
+box-sizing: border-box;
+
+list-style-type: none;
+
+}
+
+
+    </style> -->
   </head>
   <body>
     <!-- Header section -->
@@ -21,7 +64,7 @@
           <path
             d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
           />
-        </svg>
+        </svg>MM
         &nbsp; &nbsp; &nbsp; &nbsp;
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +78,7 @@
             fill-rule="evenodd"
             d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"
           />
-        </svg>
+        </svg>23434534
         &nbsp; 8600 2550 66 &nbsp; &nbsp; &nbsp;
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +113,7 @@
     </header>
 
     <!-- Navigation Section -->
-    <nav>
+    <!-- <nav>
         
       <a href="#home">HOME</a> &nbsp; &nbsp; &nbsp; &nbsp;
       <a href="#techStack">TECH STACK</a> &nbsp; &nbsp; &nbsp; &nbsp;
@@ -80,15 +123,35 @@
       &nbsp; &nbsp; &nbsp;
       <a href="others.html" target="_blank">OTHERS</a>
     
+    </nav> -->
+    <nav id="navSection">
+
+      <ul>
+
+        <li><a href="#home">HOME</a> </li>
+
+        <li><a href="#techStack">TECH STACK</a> </li>
+
+        <li><a href="#project">PROJECTS</a><a href="#techStack">TECH STACK</a> </li>
+
+        <li><a href="#education">EDUCATION</a></li>
+
+        <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
+
+        <li> <a href="others.html" target="_blank">OTHERS</a></li>
+
+      </ul>
+
     </nav>
 
     <!-- Main Section -->
-    <section>
+    <section id="container">
       <!-- HOME Section -->
       <section id="home">
     
+  
         <h2 >Professional Summary</h2>
-        <ul  >
+        <ul >
            
           <li >
             Having 1 year of experience in developing Single page web
@@ -129,16 +192,63 @@
       <hr />
       <!-- Technology stack section -->
       <section >
-        <h2>My Technology stack is</h2>
+        <h2><b>My Technology stack is</b></h2>
+        <table>
+<thead>
+  <tr>
+    <th>Sr.no</th>
+    <th>Technology stack</th>
+    <th>Rating</th>
+  </tr>
+</thead>
+<tr>
+  <td>1</td>
+  <td>HTML</td>
+  <TD>4</TD>
+</tr>
+<TR>
+  <td>2</td>
+  <td>css</td>
+  <TD>4</TD>
+</tr>
+<TR>
+  <td>3</td>
+  <td>Javascript</td>
+  <TD>4</TD>
+</tr>
+<tr>
+  <td>4</td>
+  <td>Angular</td>
+  <TD>5</TD>
+</tr>
+
+        </table>
       </section>
-      <hr />
+      <hr>
 
       <!-- Project Section -->
       <section id="project">
-        <h2>Projects</h2>
+        <p><b>Name:</b> Student Management</p>
+        <p><b>Environment :</b> Angular,React,java,Javascript,css,html,github</p>
+        <span><b>Team Size:</b> 6</span>
+        <span><b>Duration:</b>2021 july till present</span>
+        <p><b>Project Description</b>mainly records students all data related to college like academic activities results </p>
       </section>
-      <hr />
+      
+      <!--roles and responsibilities  -->
+      <section id="roles">
+        <h2>Roles And Responsibilities</h2>
+        <ol>
+          <li>Designed and implemented the user interface using html5 and css3</li>
+          <li>work closely with backend</li>
+          <li>identify issues in front end codebase</li>
+          <li>worked on GIT</li>
+          <li>used JIRA for bug tracking</li>
+          <li>implemented project using agile scrum</li>
+        </ol>
 
+      </section>
+    </hr>
       <!-- Education Section -->
       <section id="education">
         <h2><b>Education Details</b></h2>
@@ -224,14 +334,23 @@
             d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
           />
         </svg>
-      </a>
+      </a> 
+      <a id="what" href="https://www.whatsapp.com/">
+        <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+          <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+        </svg>
+        </a>
       
     </footer>
 
     <section>
+
       <!-- Copy write section -->
       Copyright &copy;2024 MANJIRI Inc. All
       rights reserved.
     </section>
+    </section>
+    
   </body>
 </html>

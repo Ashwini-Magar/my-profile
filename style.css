@@ -1,0 +1,68 @@
+/* header section */
+header{
+    background-color: black;
+    color: white;
+position:fixed;
+      width: 100%;
+      top:0;
+  }
+  
+  /* Navigation Section */
+
+#navSection{
+text-align:center;
+width:100%;
+letter-spacing: 2px;
+font-weight: bold;
+position: fixed;
+top:0;
+margin-top: 20px;
+background-color: aqua;
+}
+#navSection li{
+
+display: inline;
+
+margin-right: 40px;
+
+}
+/* container section */
+#container{
+    width: 800px;
+    /* to center */
+    margin:auto;
+}
+/* Universal Selector */
+    *{
+        padding:0;
+            margin:0;
+        
+        box-sizing: border-box;
+        
+      }
+    
+#what {
+margin-left: 200px;
+padding-left: 700px;
+position: fixed;
+bottom: 0px;
+}
+#home{
+    margin-top: 30px;
+    padding-top: 40px;
+}
+
+
+/* education section */
+table, tr, th, td {
+
+    border: 2px solid rgb(216, 186, 131);
+    
+    border-collapse: collapse;
+    
+}
+h2{
+    color:brown;
+}
+
+
